@@ -2,16 +2,6 @@ import React, {useState} from 'react'
 import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
 
-/*
-* 3 - дописать типы и логику функции filterAffairs и проверить её тестами
-* 4 - выполнить пункт 3 для функции deleteAffair
-* 5 - указать нужный тип в useState с affairs
-* 7 - в файле Affairs.tsx дописать типизацию пропсов
-* 8 - в файле Affairs.tsx дописать логику функций setAll, setHigh, setMiddle, setLow
-* 9 - в файле Affair.tsx дописать типизацию пропсов
-* 11 - в файле Affair.tsx отобразить приходящие данные
-* */
-
 // types
 export type AffairPriorityType = 'low' | 'middle' | 'high'
 export type AffairType = {
@@ -31,16 +21,19 @@ const defaultAffairs: Array<AffairType> = [
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => { // need to fix any
-
-  return affairs // need to fix
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
+  if (filter === 'all') {
+    return affairs
+  } else {
+    return affairs.filter(a => a.priority === filter);
+  }
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => {
   return affairs.filter(a => a._id != _id);
 }
 
 function HW2() {
-  const [affairs, setAffairs] = useState<any>(defaultAffairs) // need to fix any
+  const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs)
   const [filter, setFilter] = useState<FilterType>('all')
 
   const filteredAffairs = filterAffairs(affairs, filter)

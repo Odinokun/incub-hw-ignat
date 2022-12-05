@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/incub-hw-ignat/static/css/main.b725e40f.css",
-    "main.js": "/incub-hw-ignat/static/js/main.ab9e4373.js",
+    "main.css": "/incub-hw-ignat/static/css/main.edc9180b.css",
+    "main.js": "/incub-hw-ignat/static/js/main.9ecccf7a.js",
     "static/js/787.66cb4309.chunk.js": "/incub-hw-ignat/static/js/787.66cb4309.chunk.js",
     "index.html": "/incub-hw-ignat/index.html",
-    "main.b725e40f.css.map": "/incub-hw-ignat/static/css/main.b725e40f.css.map",
-    "main.ab9e4373.js.map": "/incub-hw-ignat/static/js/main.ab9e4373.js.map",
+    "main.edc9180b.css.map": "/incub-hw-ignat/static/css/main.edc9180b.css.map",
+    "main.9ecccf7a.js.map": "/incub-hw-ignat/static/js/main.9ecccf7a.js.map",
     "787.66cb4309.chunk.js.map": "/incub-hw-ignat/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b725e40f.css",
-    "static/js/main.ab9e4373.js"
+    "static/css/main.edc9180b.css",
+    "static/js/main.9ecccf7a.js"
   ]
 }

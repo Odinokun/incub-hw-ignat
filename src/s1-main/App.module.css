@@ -1,5 +1,7 @@
 .App {
   --header_height: 60px;
+  max-width: 1100px;
+  border-right: 1px solid #D9D9D9;
 }
 
 .hwTitle {

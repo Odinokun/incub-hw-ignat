@@ -15,6 +15,10 @@
   box-shadow: none;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 .secondary {
   color: #06c;
   border: 1px solid #06c;
